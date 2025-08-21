@@ -8,7 +8,8 @@ plugins {
 android {
     namespace = "com.example.grocery_app_frontend"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // Explicitly set NDK version to resolve build error
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

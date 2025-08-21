@@ -373,7 +373,7 @@ class _GroceryHomeScreenState extends State<GroceryHomeScreen> {
                               priceText: '\$12',
                               onAdd: () => _onAdd(context, 'Fresh Lemon (Alt)'),
                               dividerColor: colorE0E2EE,
-                              bgColor: colorF8F9FB,
+                              bgColor: const Color(0xFFF8F9FB), // replaced undefined colorF8F9FB
                               priceBg: colorFFFFFF,
                               priceColor: color3F3F3F,
                               subtitleColor: color616A7D,
@@ -391,7 +391,7 @@ class _GroceryHomeScreenState extends State<GroceryHomeScreen> {
                               priceText: '\$06',
                               onAdd: () => _onAdd(context, 'Green Tea'),
                               dividerColor: colorE0E2EE,
-                              bgColor: colorF8F9FB,
+                              bgColor: const Color(0xFFF8F9FB),
                               priceBg: colorFFFFFF,
                               priceColor: color3F3F3F,
                               subtitleColor: color616A7D,
@@ -934,7 +934,7 @@ class _BottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const Color colorF8F9FB = Color(0xFFF8F9FB);
-    const Color color8891A5 = Color(0xFF8891A5);
+
 
     return SizedBox(
       height: 103,
@@ -1058,7 +1058,6 @@ class _NavItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const Color color8891A5 = Color(0xFF8891A5);
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -1076,7 +1075,7 @@ class _NavItem extends StatelessWidget {
           style: const TextStyle(
             fontSize: 12,
             height: 16 / 12,
-            color: color8891A5,
+            color: Color(0xFF8891A5),
             fontWeight: FontWeight.w500,
           ),
         ),
