@@ -165,11 +165,8 @@ class CheckoutScreen extends StatelessWidget {
                       elevation: 0,
                     ),
                     onPressed: () {
-                      // Navigate to a Track Order screen if/when implemented.
-                      // For now, just show confirmation.
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Order placed')),
-                      );
+                      // Navigate to Track Order after placing order
+                      Navigator.pushNamed(context, '/track-order');
                     },
                     child: const Text(
                       'Place Order',

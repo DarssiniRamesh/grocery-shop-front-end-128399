@@ -4,6 +4,7 @@ import 'screens/shopping_cart_offer_screen.dart';
 import 'screens/product_details_screen.dart';
 import 'screens/products_screen.dart';
 import 'screens/checkout_screen.dart';
+import 'screens/track_order_screen.dart';
 
 void main() {
   runApp(const GroceryApp());
@@ -78,6 +79,9 @@ class GroceryApp extends StatelessWidget {
         //  - many other svg/png from assets/product-details-*.*
         '/product': (_) => const ProductDetailsScreen(),
         '/checkout': (_) => const CheckoutScreen(),
+        // PUBLIC_INTERFACE
+        // Track Order screen route for post-checkout delivery tracking.
+        '/track-order': (_) => const TrackOrderScreen(),
         // PUBLIC_INTERFACE
         // Products list route translated from assets/products-754-3763.html
         '/products': (_) => const ProductsScreen(),
