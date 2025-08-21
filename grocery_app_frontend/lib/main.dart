@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/categories_screen.dart';
 
 void main() {
   runApp(const GroceryApp());
@@ -61,7 +62,7 @@ class GroceryApp extends StatelessWidget {
         // PUBLIC_INTERFACE
         // Placeholder routes for bottom navigation and interactions.
         '/favourites': (_) => const PlaceholderScreen(title: 'Favourites'),
-        '/categories': (_) => const PlaceholderScreen(title: 'Categories'),
+        '/categories': (_) => const CategoriesScreen(),
         '/more': (_) => const PlaceholderScreen(title: 'More'),
         '/cart': (_) => const PlaceholderScreen(title: 'Cart'),
         '/search': (_) => const PlaceholderScreen(title: 'Search'),
