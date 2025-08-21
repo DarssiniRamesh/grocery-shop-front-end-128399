@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/categories_screen.dart';
 import 'screens/shopping_cart_offer_screen.dart';
+import 'screens/product_details_screen.dart';
 
 void main() {
   runApp(const GroceryApp());
@@ -67,7 +68,13 @@ class GroceryApp extends StatelessWidget {
         '/more': (_) => const PlaceholderScreen(title: 'More'),
         '/cart': (_) => const ShoppingCartOfferScreen(),
         '/search': (_) => const PlaceholderScreen(title: 'Search'),
-        '/product': (_) => const PlaceholderScreen(title: 'Product Details'),
+        // PUBLIC_INTERFACE
+        // Product Details route: navigated from product cards on Home/Products.
+        // Assets used inside screen (examples):
+        //  - assets/product-details-image-754-4050.png (hero)
+        //  - assets/product-details-fill-4-754-4056.svg (back chevron)
+        //  - many other svg/png from assets/product-details-*.*
+        '/product': (_) => const ProductDetailsScreen(),
         '/checkout': (_) => const PlaceholderScreen(title: 'Checkout'),
       },
     );
@@ -696,6 +703,7 @@ class _ProductCard extends StatelessWidget {
     const Color color2A4BA0 = Color(0xFF2A4BA0);
 
     return GestureDetector(
+      // Navigate to Product Details screen
       onTap: () => Navigator.pushNamed(context, '/product'),
       child: Container(
         width: 128,
