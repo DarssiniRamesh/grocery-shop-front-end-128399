@@ -3,6 +3,7 @@ import 'screens/categories_screen.dart';
 import 'screens/shopping_cart_offer_screen.dart';
 import 'screens/product_details_screen.dart';
 import 'screens/products_screen.dart';
+import 'screens/checkout_screen.dart';
 
 void main() {
   runApp(const GroceryApp());
@@ -76,7 +77,7 @@ class GroceryApp extends StatelessWidget {
         //  - assets/product-details-fill-4-754-4056.svg (back chevron)
         //  - many other svg/png from assets/product-details-*.*
         '/product': (_) => const ProductDetailsScreen(),
-        '/checkout': (_) => const PlaceholderScreen(title: 'Checkout'),
+        '/checkout': (_) => const CheckoutScreen(),
         // PUBLIC_INTERFACE
         // Products list route translated from assets/products-754-3763.html
         '/products': (_) => const ProductsScreen(),
