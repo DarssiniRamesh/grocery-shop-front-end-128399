@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/categories_screen.dart';
+import 'screens/shopping_cart_offer_screen.dart';
 
 void main() {
   runApp(const GroceryApp());
@@ -64,9 +65,10 @@ class GroceryApp extends StatelessWidget {
         '/favourites': (_) => const PlaceholderScreen(title: 'Favourites'),
         '/categories': (_) => const CategoriesScreen(),
         '/more': (_) => const PlaceholderScreen(title: 'More'),
-        '/cart': (_) => const PlaceholderScreen(title: 'Cart'),
+        '/cart': (_) => const ShoppingCartOfferScreen(),
         '/search': (_) => const PlaceholderScreen(title: 'Search'),
         '/product': (_) => const PlaceholderScreen(title: 'Product Details'),
+        '/checkout': (_) => const PlaceholderScreen(title: 'Checkout'),
       },
     );
   }
